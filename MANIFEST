@@ -1,9 +1,14 @@
 bin/marc2dc
+Build.PL
 Changes
 lib/MARC/Crosswalk/DublinCore.pm
-Makefile.PL
 MANIFEST
-README
+META.yml
 t/01-use.t
+t/10-dc_simple.t
+t/11-dc_qualified.t
+t/98-pod_coverage.t
 t/99-pod.t
-META.yml                                 Module meta-data (added by MakeMaker)
+t/camel.usmarc
+Makefile.PL
+README

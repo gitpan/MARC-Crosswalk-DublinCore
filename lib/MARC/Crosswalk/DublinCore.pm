@@ -29,6 +29,22 @@ MARC: http://www.loc.gov/marc/dccross.html.
 NB: The conversion cannot be done in a round-trip manner. i.e. Doing a conversion
 from MARC to DC, then trying to go back to MARC will not yield the original record.
 
+=head1 INSTALLATION
+
+To install this module via Module::Build:
+
+	perl Build.PL
+	./Build         # or `perl Build`
+	./Build test    # or `perl Build test`
+	./Build install # or `perl Build install`
+
+To install this module via ExtUtils::MakeMaker:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
 =cut
 
 use strict;
@@ -41,7 +57,7 @@ use DublinCore::Element;
 
 use Carp qw( croak );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my %leader06_lut = (
 	a => 'Text',
@@ -594,7 +610,7 @@ sub as_marc {
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004 by Brian Cassidy
+Copyright 2005 by Brian Cassidy
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
