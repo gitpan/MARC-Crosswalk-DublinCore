@@ -1,0 +1,9 @@
+bin/marc2dc
+Changes
+lib/MARC/Crosswalk/DublinCore.pm
+Makefile.PL
+MANIFEST
+README
+t/01-use.t
+t/99-pod.t
+META.yml                                 Module meta-data (added by MakeMaker)
